@@ -1,0 +1,48 @@
+<div class="card-panel">
+    <div class="row">
+
+
+        <div class="input-field col s12 m7">
+            <div class="card-panel">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="userId" name="userId" type="text" class="validate">
+                        <label id="lblUserId" for="userId">UserID</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <select id="currency" name="currency">
+                            <option value="USD">USD</option>
+                            <option value="BRL">BRL</option>
+                        </select>
+                        <label>Currency</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="amount" name="amount" type="text" class="validate">
+                        <label id="lblAmount" for="amount">Argentinian Amount</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <a class="waves-effect waves-light btn-small" (click)="purchase()">
+                            <i class="material-icons left">money</i>
+                            Purchase
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="input-field col s12 m4">
+            <div class="card-panel">
+                <div class="row">
+                    <table>
+                        <thead>
+                            <th>Currency</th>
+                            <th>Buying</th>
+                            <th>Selling</th>
+                            <th>Date</th>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

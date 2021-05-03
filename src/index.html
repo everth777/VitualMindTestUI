@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>UiVirtualmindTest</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">      
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <style>
+    header, main, footer {
+    padding-left: 300px;
+  }
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }
+  #menu:hover{
+  cursor: pointer;
+}
+
+.modal-loader {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2);/* Black w/ opacity */    
+    padding-left: 50%;      
+}
+.success{
+    background-color: #26a69a;
+    border-radius: 24px;
+}
+
+.warning{
+    background-color: #fff176;
+    border-radius: 24px;    
+    color: black;
+}
+
+.error{
+    background-color:#ef5350;
+    border-radius: 24px;
+}
+
+  </style>
+</head>
+<body>  
+  
+    <header>
+      <nav class="#26a69a teal"> 
+      <div class="nav-wrapper">         
+        <ul class="collapsible sidenav sidenav-fixed" id="menu-responsive"></ul>    
+       <a id="menu" data-target="menu-responsive" class="sidenav-trigger">
+            <i class="material-icons">menu</i>              
+          </a>
+          <a id="title" class="brand-logo center">VirtualMind Test</a>
+          <ul class="right">                                
+          
+         </ul>
+      </div>                                        
+      </nav>
+    </header>
+
+    <section>                    
+    </section>
+    
+    <main>
+      <div class="card-panel">
+        <div class="card-content black-text">   
+          <div id="content">
+            <app-root></app-root>  
+          </div>
+        </div>
+    </main> 
+        
+    
+
+    <footer>
+      <span>Everth's Test</span>
+    </footer> 
+    
+    <div id="loader" class ="modal-loader">
+      <div class="modal-content-loader">            
+        <img  style="margin-top: 30%;" src="assets/img/loader.gif"/>
+      </div>        
+    </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+</body>
+</html>
